@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+        <TextView
+            android:text="red"
+            android:gravity="center_horizontal"
+            android:background="#aa0000"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"/>
+        <TextView
+            android:text="green"
+            android:gravity="center_horizontal"
+            android:background="#00aa00"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"/>
+        <TextView
+            android:text="blue"
+            android:gravity="center_horizontal"
+            android:background="#0000aa"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"/>
+        <TextView
+            android:text="yellow"
+            android:gravity="center_horizontal"
+            android:background="#aaaa00"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+
+        <!-- Baris pertama: TextView sebagai teks biasa -->
+
+        <!-- Ubah layout_weight menjadi 0 -->
+
+        <!-- Baris kedua: Button -->
+        <EditText
+            android:id="@+id/editTextText2"
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Name" />
+
+        <Button
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Button"
+            android:textSize="15pt" /> <!-- Tambah layout_gravity="center" -->
+
+        <!-- Baris ketiga: Button -->
+        <Button
+            android:layout_width="289dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Help"
+            android:textSize="15pt" />
+
+        <Button
+            android:layout_width="289dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="linear"
+            android:textSize="15pt" />
+
+        <!-- Tambah layout_gravity="center" -->
+
+        <!-- Baris keempat: TextView sebagai teks biasa -->
+        <!-- Ubah layout_weight menjadi 0 -->
+    </LinearLayout>
+
+</LinearLayout>
