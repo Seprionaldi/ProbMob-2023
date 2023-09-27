@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SampleRecyclerView">
+    tools:context=".GetAPIActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,9 +12,8 @@
         android:orientation="vertical">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvLatihan"
+            android:id="@+id/rvUser"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
