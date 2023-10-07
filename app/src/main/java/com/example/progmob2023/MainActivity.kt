@@ -11,14 +11,15 @@ import android.widget.TextView
 
 
 class MainActivity : AppCompatActivity() {
-    lateinit var tvMain :TextView
-    lateinit var  btnMain : Button
-    lateinit var btnConst : Button
-    lateinit var btnHelp : Button
-    lateinit var btnlinear : Button
-    lateinit var btnTabel : Button
-    lateinit var  edInputNama : EditText
-    lateinit var btnProtein : Button
+    lateinit var tvMain: TextView
+    lateinit var btnMain: Button
+    lateinit var btnConst: Button
+    lateinit var btnHelp: Button
+    lateinit var btnlinear: Button
+    lateinit var btnTabel: Button
+    lateinit var edInputNama: EditText
+    lateinit var btnProtein: Button
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -54,10 +55,12 @@ class MainActivity : AppCompatActivity() {
         btnHelp.setOnClickListener(View.OnClickListener { view ->
             var bundle = Bundle()
             var strTmp = edInputNama.text.toString()
-            bundle.putString("tesText",strTmp)
+            bundle.putString("tesText", strTmp)
 
-            var intent = Intent(this@MainActivity,
-                HelpActivity2::class.java)
+            var intent = Intent(
+                this@MainActivity,
+                HelpActivity2::class.java
+            )
             intent.putExtras(bundle)
             startActivity(intent)
         })
@@ -65,10 +68,12 @@ class MainActivity : AppCompatActivity() {
         btnlinear.setOnClickListener(View.OnClickListener { view ->
             var bundle = Bundle()
             var strTmp = edInputNama.text.toString()
-            bundle.putString("tesText",strTmp)
+            bundle.putString("tesText", strTmp)
 
-            var intent = Intent(this@MainActivity,
-                LinearActivity2::class.java)
+            var intent = Intent(
+                this@MainActivity,
+                LinearActivity2::class.java
+            )
             intent.putExtras(bundle)
             startActivity(intent)
         })
@@ -76,10 +81,12 @@ class MainActivity : AppCompatActivity() {
         btnConst.setOnClickListener(View.OnClickListener { view ->
             var bundle = Bundle()
             var strTmp = edInputNama.text.toString()
-            bundle.putString("tesText",strTmp)
+            bundle.putString("tesText", strTmp)
 
-            var intent = Intent(this@MainActivity,
-                activity_constraint::class.java)
+            var intent = Intent(
+                this@MainActivity,
+                activity_constraint::class.java
+            )
             intent.putExtras(bundle)
             startActivity(intent)
         })
@@ -87,10 +94,12 @@ class MainActivity : AppCompatActivity() {
         btnTabel.setOnClickListener(View.OnClickListener { view ->
             var bundle = Bundle()
             var strTmp = edInputNama.text.toString()
-            bundle.putString("tesText",strTmp)
+            bundle.putString("tesText", strTmp)
 
-            var intent = Intent(this@MainActivity,
-                TabelActivity::class.java)
+            var intent = Intent(
+                this@MainActivity,
+                TabelActivity::class.java
+            )
             intent.putExtras(bundle)
             startActivity(intent)
         })
@@ -98,13 +107,36 @@ class MainActivity : AppCompatActivity() {
         btnProtein.setOnClickListener(View.OnClickListener { view ->
             var bundle = Bundle()
             var strTmp = edInputNama.text.toString()
-            bundle.putString("tesText",strTmp)
+            bundle.putString("tesText", strTmp)
 
-            var intent = Intent(this@MainActivity,
-                ProteinTrackerActivity::class.java)
+            var intent = Intent(
+                this@MainActivity,
+                ProteinTrackerActivity::class.java
+            )
             intent.putExtras(bundle)
             startActivity(intent)
         })
 
+
+//        @Override
+//        protected void onCreate(Bundle savedInstanceState) {
+//            super.onCreate(savedInstanceState);
+//            setContentView(R.layout.activity_main);
+//            Button btnSetting = (Button)findViewById(R.id.btnSetting);
+//            btnSetting.setOnClickListener(btnSetting);
+//        }
+//        private View.OnClickListener btnSetting = new
+//        View.OnClickListener() {
+//            @Override
+//            29 2019 Prodi Sistem Informasi | Fakultas Teknologi Informasi | UKDW
+//            public void onClick(View v) {
+//                Intent intent = new Intent(MainActivity.this,
+//                    SettingProteinTracker.class);
+//                startActivity(intent);
+//            }
+//
+//
+//
+//    }
     }
 }
