@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <header
+
+        android:fragment="com.example.progmob2023.SettingProteinTracker$SettingsFragment"
+        android:icon="@drawable/ic_sync_black_24dp"
+        android:title="@string/pref_header_data_sync"
+        tools:ignore="MissingClass" />
+
+</PreferenceScreen>
